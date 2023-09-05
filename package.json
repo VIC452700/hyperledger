@@ -1,0 +1,32 @@
+{
+  "name": "hyperledger",
+  "description": "This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-etherscan": "^3.1.7",
+    "@types/chai": "^4.3.6",
+    "@types/mocha": "^10.0.1",
+    "chai": "^4.3.8",
+    "dotenv": "^16.3.1",
+    "mocha": "^10.2.0",
+    "ts-node": "^10.9.1"
+  },
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "deploy:testnet": "npx hardhat run --network testnet scripts/deploy.ts",
+    "deploy:mainnet": "npx hardhat run --network mainnet scripts/deploy.ts",
+    "test": "npx hardhat test",
+    "test:coverage": "npx hardhat coverage",
+    "test:size-contracts": "npx hardhat size-contracts"
+  },
+  "dependencies": {
+    "ethers": "^6.7.1",
+    "hardhat": "^2.17.2"
+  }
+}
